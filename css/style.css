@@ -86,3 +86,20 @@ html, body{
     vertical-align: middle;
     display: inline-block;
 }
+
+.sidebar__playlists{
+    padding: 20px 0;
+    border-top: 1px solid rgb(40,40,40);
+}
+
+.sidebar__playlists a{
+    margin: 10px 0;
+    display: block;
+    color: rgb(190, 190, 190);
+    transition: 400ms;
+}
+
+.sidebar__playlists a:hover{
+    transition: 400ms;
+    color: white;
+}
