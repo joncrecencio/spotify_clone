@@ -26,68 +26,68 @@ const playlistPrimeira = [
 
 const imagensMusicas = [
     {
-        urlImage:"../img/top50.png",
+        urlImage:"./img/top50.png",
         nameImage:"As 50 mais tocadas",
         dataSong: "Top 50",
-        dataFiles: "../assets/perfect_edsheeran.mp3",
+        dataFiles: "./assets/perfect_edsheeran.mp3",
         titleMusic:"As 50 mais tocadas",
         descriptionMusic: "Ouça agora as 50 mais tocadas"
     },
 
     {
-        urlImage:"../img/edsheeran.jpg",
+        urlImage:"./img/edsheeran.jpg",
         nameImage:"Ed Sheeran",
         dataSong: "Perfect",
-        dataFiles: "../assets/perfect_edsheeran.mp3",
+        dataFiles: "./assets/perfect_edsheeran.mp3",
         titleMusic:"Perfect",
         descriptionMusic: "Ouça agora Perfect de Ed Sheeran"
     },
 
     {
-        urlImage:"../img/gunsrools.png",
+        urlImage:"./img/gunsrools.png",
         nameImage:"Guns N' Roses",
         dataSong: "Sweet Child Of Mine",
-        dataFiles: "../assets/music.mp3",
+        dataFiles: "./assets/music.mp3",
         titleMusic:"Sweet Child Of Mine",
         descriptionMusic: "Ouça agora o álbum de Guns N' Roses"
     },
     {
-        urlImage:"../img/top50.png",
+        urlImage:"./img/top50.png",
         nameImage:"As 50 mais tocadas",
         dataSong: "Top 50",
-        dataFiles: "../assets/perfect_edsheeran.mp3",
+        dataFiles: "./assets/perfect_edsheeran.mp3",
         titleMusic:"As 50 mais tocadas",
         descriptionMusic: "Ouça agora as 50 mais tocadas"
     },
 
     {
-        urlImage:"../img/edsheeran.jpg",
+        urlImage:"./img/edsheeran.jpg",
         nameImage:"Ed Sheeran",
         dataSong: "Perfect",
-        dataFiles: "../assets/perfect_edsheeran.mp3",
+        dataFiles: "./assets/perfect_edsheeran.mp3",
         titleMusic:"Perfect",
         descriptionMusic: "Ouça agora Perfect de Ed Sheeran"
     },
 
     {
-        urlImage:"../img/gunsrools.png",
+        urlImage:"./img/gunsrools.png",
         nameImage:"Guns N' Roses",
         dataSong: "Sweet Child Of Mine",
-        dataFiles: "../assets/music.mp3",
+        dataFiles: "./assets/music.mp3",
         titleMusic:"Sweet Child Of Mine",
         descriptionMusic: "Ouça agora o álbum de Guns N' Roses"
     },
     {
-        urlImage:"../img/top50.png",
+        urlImage:"./img/top50.png",
         nameImage:"As 50 mais tocadas",
         dataSong: "Top 50",
-        dataFiles: "../assets/perfect_edsheeran.mp3",
+        dataFiles: "./assets/perfect_edsheeran.mp3",
         titleMusic:"As 50 mais tocadas",
         descriptionMusic: "Ouça agora as 50 mais tocadas"
     },
 
     {
-        urlImage:"../img/edsheeran.jpg",
+        urlImage:"./img/edsheeran.jpg",
         nameImage:"Ed Sheeran",
         dataSong: "Perfect",
         dataFiles: "../assets/perfect_edsheeran.mp3",
@@ -98,19 +98,19 @@ const imagensMusicas = [
 
 const imagensMusicasPlaylist = [
     {
-        urlImage:"../img/edsheeran.jpg",
+        urlImage:"./img/edsheeran.jpg",
         nameImage:"Ed Sheeran",
         dataSong: "Perfect",
-        dataFiles: "../assets/perfect_edsheeran.mp3",
+        dataFiles: "./assets/perfect_edsheeran.mp3",
         titleMusic:"Perfect",
         descriptionMusic: "Ouça agora Perfect de Ed Sheeran"
     },
 
     {
-        urlImage:"../img/gunsrools.png",
+        urlImage:"./img/gunsrools.png",
         nameImage:"Guns N' Roses",
         dataSong: "Perfect",
-        dataFiles: "../assets/music.mp3",
+        dataFiles: "./assets/music.mp3",
         titleMusic:"Sweet Child Of Mine",
         descriptionMusic: "Ouça agora o álbum de Guns N' Roses"
     },
