@@ -30,7 +30,7 @@ html, body{
 }
 
 .sidebar__logo img{
-    max-width: 250px;
+    max-width: 200px;
     width: 100%;
 }
 
@@ -97,9 +97,155 @@ html, body{
     display: block;
     color: rgb(190, 190, 190);
     transition: 400ms;
+    text-decoration: none;
 }
 
 .sidebar__playlists a:hover{
     transition: 400ms;
     color: white;
 }
+
+/* Parte principal da aplicação */
+
+.main{
+	width: calc(100% - 250px);
+	background-color: rgb(30,30,30);
+	height: 100%;
+
+	float: left;
+	padding:15px 50px;
+	overflow-y: auto;
+}
+
+.main__row{
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
+	margin-top:20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main__wrapper{
+    padding-bottom: 200px;
+}
+
+.main__col{
+    cursor: pointer;
+    width: 11%;
+    margin-right: 1%;
+    margin-top: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: 700ms;
+}
+
+.main__col:hover{
+    transition: 700ms;
+    width: 13%;
+}
+
+.main__col img{
+    height: auto;
+    width: 90%;
+}
+
+.main__col h3{
+    color: white;
+    margin: 8px 0;
+}
+
+.main__col p{
+    color: rgb(100, 100, 100);
+    margin: 8px 0;
+    font-size: 13px;
+    position: relative;
+}
+
+.main__row__title{
+    width: 100%;
+}
+
+.main__row__title h2{
+    color: #fff;
+}
+
+.player{
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(60, 60, 60);
+}
+
+.player__artist{
+    width: 20%;
+}
+
+.player__artist img{
+    max-width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.player__artist h3{
+    color: white;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.player__artist h3 > span{
+    color: rgb(200, 200, 200);
+    font-size: 13px;
+}
+
+.player__control{
+    width: 70%;
+    text-align: center;
+}
+
+.player__control__buttons a{
+    color: white;
+    margin: 8px 15px;
+    font-size: 18px;
+}
+
+.player__control_progress{
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: rgb(130, 130, 130);
+}
+
+.player__control__progress__2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 7px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

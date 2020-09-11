@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Spotify - Clone</title>
 </head>
 <body>
 
+    <!-- SIDEBAR COM AS OPÇÕES DO MENU -->
     <div class="sidebar">
 
+        <!--CONTAINER CRIADO POIS O FIREFOX NÃO LÊ O PADDING-BOTTOM SOBRE O PLAYER -->
         <div class="sidebar__wrapper">
+            <!-- LOGO -->
             <div class="sidebar__logo">
                 <img src="img/logo.png" alt="">
             </div><!--sidebar__logo-->
 
+            <!-- MENU DE BUSCAS, BIBLIOTECAS E INICIO -->
             <div class="sidebar__menu">
                 <a href="#" class="sidebar__menu__selecionado" ><i class="fas fa-home"></i> Início</a>
                 <a href="#"><i class="fas fa-search"></i> Buscar</a>
                 <a href="#"><i class="fas fa-database" ></i> Biblioteca</a>
             </div><!--sidebar__menu-->
 
+            <!-- MENU GERAL-->
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
 
+                <!-- CRIANDO O SIMBOLO DE ADICIONAR COM O CSS -->
                 <div class="sidebar__menu__item">
                     <div class="sidebar__menu__item__componente">
                         +
@@ -31,26 +38,62 @@
                     <span>Criar uma playlist</span>
                 </div><!--sidebar__menu__item-->
 
+                <!-- CRIANDO O ÍCONE DE FAVORITOS -->
                 <div class="sidebar__menu__item">
                     <img src="img/musicas_curtidas.png" alt="">
                     <span>Músicas curtidas</span>
                 </div><!--sidebar__menu__item-->
-
             </div><!--sidebar__menu-->
 
-            <div class="sidebar__playlists">
-            
-            </div><!--sidebar__playlists-->
+            <!-- TRAZENDO AS PLAYLISTS CRIADAS PELO USUÁRIO, NESTE CASO FEITO O CARREGAMENTO VIA JS PARA MINIMIZAR OS CÓDIGOS NO HTML LOCAL -->
+            <div class="sidebar__playlists"></div><!--sidebar__playlists-->
 
         </div><!--sidebar-wrapper-->
 
     </div><!--sidebar-->
     
+    <!-- CONTEÚDO PRINCIPAL - VITRINE DAS MÚSICAS -->
     <div class="main">
+
+        <!--CONTAINER CRIADO POIS O FIREFOX NÃO LÊ O PADDING-BOTTOM SOBRE O PLAYER -->
         <div class="main__wrapper">
+
+            <!-- DIV SENDO ALIMENTADA ATRAVÉS DO JAVASCRIPT PARA DIMINUIR O MÁXIMO DE CÓDIGO AQUI NO HTML LOCAL -->
+            <div class="main__row">
+                <div class="main__row__title"><h2>Paradas</h2></div><!--main__row__titles-->
+                    
+            </div><!--main__row-->
+            <!-- DIV SENDO ALIMENTADA ATRAVÉS DO JAVASCRIPT PARA DIMINUIR O MÁXIMO DE CÓDIGO AQUI NO HTML LOCAL -->
+            <div id="musicas__tocadas" class="main__row">
+                <div class="main__row__title"><h2> Minhas músicas</h2></div><!--main__row__titles-->
+                  
+            </div><!--main__row-->
 
         </div><!--main__wrapper-->
     </div><!--main-->
+
+    <!-- CRIANDO O PLAYER -->
+    <div class="player">
+        <div class="player__artist">
+
+        </div><!--player__artist-->
+
+        <!-- CRIANDO O CONTROLADO DO PLAYER -->
+        <div class="player__control">
+            <div class="player__control__buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a id="pauseBtn" style="display: none;" href="#"><i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+            </div><!--player__control__buttons-->
+
+            <!-- CRIANDO BARRA DE PROGRESSO -->
+            <div class="player__control_progress">
+                <div style="width: 80%;" class="player__control__progress__2"></div>
+            </div><!--player__control__progress-->
+
+        </div><!--player__control-->
+    </div><!--player-->
 
     <script src="js/all.min.js"></script>
     <script src="js/script.js"></script>
