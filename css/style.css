@@ -175,7 +175,7 @@ html, body{
 .player{
     width: 100%;
     padding: 20px;
-    height: 100px;
+    height: 135px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -188,7 +188,7 @@ html, body{
 }
 
 .player__artist img{
-    max-width: 70px;
+    max-width: 60px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -237,6 +237,14 @@ html, body{
     height: 7px;
     border-radius: 8px;
     background-color: #fff;
+}
+
+audio{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -999;
+    opacity: 0;
 }
 
 
