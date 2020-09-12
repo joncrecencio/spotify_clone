@@ -125,6 +125,7 @@ function renderPlaylistsFavorite(){
 function renderParadas(){
         imagensMusicas.forEach((photoAlbum) => {
             musicasParadas.innerHTML += `<div class="main__col" data-image = "${photoAlbum.urlImage}" data-artist = "${photoAlbum.nameImage}" data-song = "${photoAlbum.dataSong}" data-file = "${photoAlbum.dataFiles}" >
+
             <img src="${photoAlbum.urlImage}" alt="${photoAlbum.nameImage}">
             <h3>${photoAlbum.titleMusic}</h3>
             <p>${photoAlbum.descriptionMusic}</p></div>`
@@ -148,7 +149,7 @@ renderParadas()
 renderMusicasTocadas()
 
 const audioPlayer = document.querySelector("#audioplayer")
-var loaded = false;
+var loaded = false
 const playBtn = document.querySelector("#playBtn")
 const pauseBtn = document.querySelector("#pauseBtn")
 
@@ -174,16 +175,22 @@ const playSong = (file) => {
         audioPlayer.innerHTML = `<source src="${file}" type="audio/mp3" />`
         loaded = true
     }
+    else{
+        audioPlayer.innerHTML = `<source src="${file}" type="audio/mp3" />`
+        loaded = false
+    }
+
     playBtn.style.display = "none";
     pauseBtn.style.display = "inline";
-
+    
     audioPlayer.load()
 
 }
 
-document.querySelectorAll('.main__col').forEach(item =>{
 
-    item.addEventListener('click', event=>{
+ document.querySelectorAll('.main__col').forEach(item => {
+
+    item.addEventListener('click', event =>{
         let image = [item.getAttribute('data-image')]
         let artist = [item.getAttribute('data-artist')]
         let song = [item.getAttribute('data-song')]
@@ -196,9 +203,10 @@ document.querySelectorAll('.main__col').forEach(item =>{
             <h3>${artist}<br/><span>${song}</span></h3>
 
         `
-        console.log(playerArtistComponent)
         playSong(file)
+        console.log(playerArtistComponent)
     })
+    
 
 })
 
