@@ -109,7 +109,7 @@ const imagensMusicasPlaylist = [
     {
         urlImage:"./img/gunsrools.png",
         nameImage:"Guns N' Roses",
-        dataSong: "Perfect",
+        dataSong: "Sweet Child Of Mine",
         dataFiles: "./assets/music.mp3",
         titleMusic:"Sweet Child Of Mine",
         descriptionMusic: "Ouça agora o álbum de Guns N' Roses"
